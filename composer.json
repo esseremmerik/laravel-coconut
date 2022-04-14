@@ -35,7 +35,12 @@
         }
     },
     "scripts": {
+        "test": "vendor/bin/pest"
     },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
         "laravel": {
             "providers": [
                 "Nidhalkratos\\LaravelCoconut\\CoconutProvider"
