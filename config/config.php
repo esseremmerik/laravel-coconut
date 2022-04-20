@@ -6,7 +6,7 @@ return [
     /**
      * Default storage
      */
-    'storage' => 'gcs',
+    'storage' => env('COCONUT_STORAGE','s3'),
 
     'storages' => [
 
@@ -27,13 +27,28 @@ return [
          * AWS S3 storage https://docs.coconut.co/jobs/storage#aws-s3
          */
 
-        'aws-s3' => [
+        's3' => [
             'service' => 's3',
             'region' => env('COCONUT_S3_REGION',null),
             'bucket' => env('COCONUT_S3_BUCKET',null),
             'credentials' => [
                 'access_key_id' => env('COCONUT_S3_KEY', null),
                 'secret_access_key' => env('COCONUT_S3_SECRET', null)
+            ],
+            'path' => '/'
+        ],
+
+        /**
+         * DO Spaces storage https://docs.coconut.co/jobs/storage#do-spaces
+         */
+
+        'dospaces' => [
+            'service' => 'dospaces',
+            'region' => env('COCONUT_DO_REGION',null),
+            'bucket' => env('COCONUT_DO_BUCKET',null),
+            'credentials' => [
+                'access_key_id' => env('COCONUT_DO_KEY', null),
+                'secret_access_key' => env('COCONUT_DO_SECRET', null)
             ],
             'path' => '/'
         ]
