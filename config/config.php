@@ -2,7 +2,7 @@
 
 return [
     'api_key' => env('COCONUT_API_KEY',null),
-    'region' => env('COCONUT_REGION','eu-west-1')
+    'region' => env('COCONUT_REGION','eu-west-1'),
 
     /**
      * Default storage
