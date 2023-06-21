@@ -33,6 +33,7 @@ class CoconutProvider extends ServiceProvider
                 config('coconut.api_key'),
                 [
                     'storage' => config('coconut.storages')[config('coconut.storage')]
+                    'region' => config('coconut.region')
                 ]
                 
             );
