@@ -1,5 +1,5 @@
 {
-    "name": "rpillz/laravel-coconut",
+    "name": "esseremmerik/laravel-coconut",
     "description": "A Wrapper around coconut transcoding library for laravel",
     "keywords": [
         "nidhalkratos",
@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0 | ^9.0",
+        "illuminate/support": "^8.0 | ^9.0 | ^10.0",
         "opencoconut/coconut": "^3.0"
     },
     "require-dev": {
