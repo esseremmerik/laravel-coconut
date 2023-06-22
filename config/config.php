@@ -52,7 +52,18 @@ return [
                 'secret_access_key' => env('COCONUT_DO_SECRET', null)
             ],
             'path' => '/'
+        ],
+    
+        
+         /**
+         * Coconut test storage https://docs.coconut.co/jobs/storage#coconut-storage-(test)
+         */
+
+        'coconut' => [
+            'service' => 'coconut',
+            'path' => '/'
         ]
+
 
     ],
 
